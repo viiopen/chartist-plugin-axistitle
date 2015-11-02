@@ -32,10 +32,18 @@
           textAnchor: 'middle',
           flipText: false
       };
+
       var defaultOptions = {
-          xAxis: axisDefaults,
-          yAxis: axisDefaults
+          axisX:  Chartist.extend({}, axisDefaults),
+          axisY:  Chartist.extend({}, axisDefaults)
       };
+
+      //as axisX will usually be at the bottom, set it to be below the labels
+      defaultOptions.axisX.offset.y = 40;
+
+      //this will stop the title text being slightly cut off at the bottom.
+      //TODO - implement a cleaner fix.
+      defaultOptions.axisY.offset.y = -1;
 
       Chartist.plugins = Chartist.plugins || {};
       Chartist.plugins.ctAxisTitle = function (options) {

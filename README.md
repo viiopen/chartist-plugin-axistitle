@@ -1,3 +1,16 @@
+# Updating
+
+## Initial setup
+
+1. `npm install`
+2. `bower install`
+
+## After that
+
+1. Change code
+2. `npm run build`
+3. Commit changes
+
 # Axis title plugin for Chartist.js
 
 This plugin allows the creation and placement of axis titles. The plugin will throw an error if it is applied to a chart
@@ -14,21 +27,21 @@ http://gionkunz.github.io/chartist-js/index.html
 var defaultOptions = {
   // The title to be displayed on the axis. If at least one axis title is not supplied then an error is thrown.
   axisTitle: '',
-  
+
   // One or more class names to be added to the axis title. Multiple class names should be separated by a space.
   axisClass: 'ct-axis-title',
-  
-  // How much to offset the title by. 
-  // Please note, x and y offset values for axisY are flipped due to the rotation of the axisY title by 90 degrees. 
+
+  // How much to offset the title by.
+  // Please note, x and y offset values for axisY are flipped due to the rotation of the axisY title by 90 degrees.
   // Therefore changing the x value moves up/down the chart, while changing y moves left/right.
   offset: {x:0, y:0},
-  
+
   // Defines the anchoring of the title text. Possible values are 'start', 'end' and 'middle'.
   textAnchor: 'middle',
 
   // Whether to flip the direction of the text. Note - This can only be used on axis Y.
   flipText : false
-  
+
 };
 ```
 
