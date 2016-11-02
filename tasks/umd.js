@@ -14,7 +14,6 @@ module.exports = function (grunt) {
     dist: {
       src: '<%= pkg.config.src %>/scripts/chartist-plugin-axistitle.js',
       dest: '<%= pkg.config.dist %>/chartist-plugin-axistitle.js',
-      objectToExport: 'Chartist.plugins.ctAxisTitle',
       indent: '  ',
       deps: {
         default: ['Chartist'],
